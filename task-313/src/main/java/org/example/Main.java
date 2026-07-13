@@ -10,8 +10,7 @@ public class Main {
         RectangleCalculator rectangle = new RectangleCalculator(length, width);
 
         //call the object methods
-        rectangle.calculateArea();
-        rectangle.calculatePerimeter();
+        rectangle.main();
     }
 }
 

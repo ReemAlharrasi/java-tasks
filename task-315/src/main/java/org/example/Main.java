@@ -3,12 +3,12 @@ package org.example;
 public class Main {
     static void main() {
         //initialize variables
-        int limit = 20;
+        int number = 7;
 
         //create object from class
-        EvenNumberAnalyzer evenNumbers = new EvenNumberAnalyzer(20);
+        FactorialCalculator factorial= new FactorialCalculator(number);
 
         //call object method
-        evenNumbers.main();
+        factorial.main();
     }
 }
