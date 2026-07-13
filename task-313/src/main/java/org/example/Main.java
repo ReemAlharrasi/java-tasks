@@ -7,7 +7,7 @@ public class Main {
         double width = 8.0;
 
         //create object from the class calculatePerimeter
-        RectangleCalculator rectangle= new RectangleCalculator(length,width);
+        RectangleCalculator rectangle = new RectangleCalculator(length, width);
 
         //call the object methods
         rectangle.calculateArea();
