@@ -6,12 +6,17 @@ public class MultiplicationTable {
     int result;
 
     //constructor
-    public MultiplicationTable(){
-
+    public MultiplicationTable(int baseInput) {
+        base = baseInput;
     }
+
     //methods
-    public void main(){
-        int i=1;
-        
+    public void main() {
+        System.out.println("----- Multiplication table of " + base+ " -----");
+        for (int i = 1; i <= 10; i++) { // loop from 1 to 10 inclusive
+            result = base * i; 
+            System.out.println(base + " x " + i + " = " + result); //print result
+        }
+
     }
 }
