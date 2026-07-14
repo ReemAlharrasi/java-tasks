@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f68f527-56cb-40fa-9f62-08a91559ca40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LargestNumberFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task-323/src/main/java/org/example/EvenOddCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task-323/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task-323/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task-323/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task-323/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +36,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.LargestNumberFinder.executor": "Run",
     "Application.Main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -82,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1784011424633</updated>
-      <workItem from="1784011425676" duration="1027000" />
+      <workItem from="1784011425676" duration="1648000" />
     </task>
     <servers />
   </component>
