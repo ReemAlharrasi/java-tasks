@@ -1,17 +1,11 @@
-package org.example;
+package task315;
 
 public class FactorialCalculator {
-    //attributes
-    int num;
-    long factorial = 1;
-
-    //constructor
-    public FactorialCalculator(int number) {
-        num = number;
-    }
-
-    //methods
     public void main() {
+        //attributes
+        int num=7;
+        long factorial = 1;
+
         //calculate factorial
         int i = 1;
         while (i <= num) {

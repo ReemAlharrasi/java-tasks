@@ -20,6 +20,7 @@ public class LargestNumberFinder {
 
         //display header
         System.out.println("----- find largest number -----");
+
         //assume first numer is the largest
         largest = numberList.get(0);
 

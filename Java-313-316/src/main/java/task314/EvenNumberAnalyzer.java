@@ -1,18 +1,12 @@
-package org.example;
+package task314;
 
 public class EvenNumberAnalyzer {
-    //Attributes
-    int limit = 20;
-    int count = 0;
-    int sum = 0;
-
-    //constructor
-    public EvenNumberAnalyzer(int fromOneUpTo) {
-        limit = fromOneUpTo;
-    }
-
-    //methods
     public void main() {
+        //variables
+        int limit = 20;
+        int count = 0;
+        int sum = 0;
+
         System.out.println("----- Even numbers From 1 to "+limit+" -----");
         //loop to go through numbers
         for (int i = 1; i <= limit; i++) {

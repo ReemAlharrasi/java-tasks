@@ -1,20 +1,12 @@
-package org.example;
+package task313;
 
 public class RectangleCalculator {
-    //attributes
-    double length;
-    double width;
-    double area;
-    double perimeter;
-
-    //constructor
-    public RectangleCalculator(double l, double w) {
-        length = l;
-        width = w;
-    }
-
-    //methods
     public void main() {
+        double length= 12.5;
+        double width= 8.0;
+        double area;
+        double perimeter;
+
         System.out.println("----- Rectangle -----");
         //print rectangle information
         System.out.println("length: "+length);
