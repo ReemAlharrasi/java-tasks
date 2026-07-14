@@ -2,11 +2,11 @@ package org.example;
 
 public class FibonacciSequence {
     //attributes
-    int length;
+    int count;
 
     //constructor
     public FibonacciSequence(int seqLength){
-        length =seqLength;
+        count =seqLength;
     }
     //methods
     public void main(){
@@ -16,18 +16,18 @@ public class FibonacciSequence {
         System.out.print(1 + "  ");
 
         //initialize varaibles for loop
-        int prev1=0;
-        int prev2=1;
-        int temp;
-        
-        for (int i=2; i<length;i++){
+        int first=0;
+        int second=1;
+        int next;
+
+        for (int i=2; i<count;i++){
             //calcaulate new item and display it
-            temp=prev1+prev2;
-            System.out.print(temp + "  ");
+            next=first+second;
+            System.out.print(next + "  ");
 
             //swap values
-            prev1=prev2;
-            prev2=temp;
+            first=second;
+            second=next;
         }
     }
 }
