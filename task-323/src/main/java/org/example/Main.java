@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     static void main() {
-        //initializa variables
+        //initialize variables
         int start = 1;
         int end = 10;
 
