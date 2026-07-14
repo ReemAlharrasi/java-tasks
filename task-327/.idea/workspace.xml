@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86435a7a-4258-44ea-85a9-f295c40a938a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../java-317-327/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task317/FibonacciSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task318/NumberReversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task319/PalindromeChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task320/StudentGradeCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task321/DigitCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task322/LargestNumberFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task323/EvenOddCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task324/MultiplicationCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task325/DecimalToBinary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task326/DigitFrequencyCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task327/ArmstrongNumberChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task-319/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task-319/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task-322/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task-322/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task-322/src/main/java/org/example/LargestNumberFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task-322/src/main/java/org/example/LargestNumberFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +89,7 @@
       <workItem from="1784026300269" duration="4000" />
       <workItem from="1784027223874" duration="904000" />
       <workItem from="1784028150007" duration="15000" />
+      <workItem from="1784033215960" duration="75000" />
     </task>
     <servers />
   </component>

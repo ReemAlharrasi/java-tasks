@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f68f527-56cb-40fa-9f62-08a91559ca40" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LargestNumberFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LargestNumberFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task-327/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task-327/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task317/FibonacciSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task318/NumberReversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task319/PalindromeChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task320/StudentGradeCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task321/DigitCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-317-327/src/main/java/task322/LargestNumberFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task-319/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task-319/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +95,7 @@
       <workItem from="1784025752062" duration="284000" />
       <workItem from="1784026307774" duration="359000" />
       <workItem from="1784027209780" duration="11000" />
+      <workItem from="1784032030667" duration="45000" />
     </task>
     <servers />
   </component>
