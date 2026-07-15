@@ -24,19 +24,19 @@ public class TrapezoidCalculator {
         leg2 = inputCheck("Enter the leg2 length of the Trapezoid: ");
 
         //Calculate area
-        float area =  ((base1 + base2) * height) / 2;
+        float area = ((base1 + base2) * height) / 2;
 
         //calculate circumference
-        float perimeter =  base1 + base2 + leg1 + leg2;
+        float perimeter = base1 + base2 + leg1 + leg2;
 
         //classify circle size
-        if (perimeter<30) classification = "Small Trapezoid";
-        else if (perimeter<60) classification = "Medium Trapezoid";
+        if (perimeter < 30) classification = "Small Trapezoid";
+        else if (perimeter <= 60) classification = "Medium Trapezoid";
         else classification = "Large Trapezoid";
 
         //display results
         System.out.println("\n-----Trapezoid Calculator-----");
-        System.out.println("Bases: " + base1 +" , " +base2);
+        System.out.println("Bases: " + base1 + " , " + base2);
         System.out.println("Height: " + height);
         System.out.println("legs length: " + leg1 + " , " + leg2);
         System.out.println("-------------------\nArea: " + area);
