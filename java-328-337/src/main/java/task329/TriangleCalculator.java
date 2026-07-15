@@ -31,8 +31,8 @@ public class TriangleCalculator {
         float perimeter = side1 + side2 + side3;
 
         //classify circle size
-        if (side1 == side2 && side2 == side3) classification = " Equilateral Triangle";
-        else if (side1 == side2 || side2 == side3 || side1 == side3) classification = " Isosceles Triangle";
+        if (side1 == side2 && side2 == side3) classification = "Equilateral Triangle";
+        else if (side1 == side2 || side2 == side3 || side1 == side3) classification = "Isosceles Triangle";
         else classification = "Scalene Triangle";
 
         //display results
