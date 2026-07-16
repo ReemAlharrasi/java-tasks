@@ -44,11 +44,14 @@ public class StudentResultAnalyzer {
 
         //generate student report: display all information
         displayReport(name, marks,totalMarks,markCount, average,grade, perfromence);
+
+        //close scanner
+        in.close();
     }
 
     public boolean validateMarks(float marks) {
-        //condition that returns truw if marks are in the correct range
-        return (marks >= 0 && marks <= 100) ? true : false;
+        //condition that returns true if marks are in the correct range
+        return (marks >= 0 && marks <= 100);
     }
 
     public float calculateTotal(ArrayList<Float> allMarks) {
@@ -99,7 +102,7 @@ public class StudentResultAnalyzer {
         System.out.println("Total marks: "+total);
         System.out.println("Average: "+average);
         System.out.println("Grade: "+grade);
-        System.out.println("Performance tatus: "+status);
+        System.out.println("Performance status: "+status);
 
     }
 
