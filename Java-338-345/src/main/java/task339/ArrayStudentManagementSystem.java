@@ -166,11 +166,11 @@ public class ArrayStudentManagementSystem {
             for (int j = i + 1; j < studentNamesSorted.size(); j++) {
 
                 //get the first character of two items to compare
-                firstLetter1=studentNamesSorted.get(i).charAt(0);
-                firstLetter2=studentNamesSorted.get(j).charAt(0);
+                firstLetter1 = studentNamesSorted.get(i).charAt(0);
+                firstLetter2 = studentNamesSorted.get(j).charAt(0);
 
                 //compare and swap if smaller
-                if ((int)firstLetter1 >(int)firstLetter2) {
+                if ((int) firstLetter1 > (int) firstLetter2) {
                     //swap
                     name = studentNamesSorted.get(i);
                     studentNamesSorted.set(i, studentNamesSorted.get(j));
