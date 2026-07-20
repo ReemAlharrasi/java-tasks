@@ -211,5 +211,7 @@ public class ArrayDataAnalyzerSystem {
         //display results
         System.out.println("original: " + numbers.toString());
         System.out.println("Sorted: " + numbersSorted.toString());
+        System.out.println("Smallest value: "+numbersSorted.get(0));
+        System.out.println("Largest value: "+numbersSorted.get(numbersSorted.size()-1));
     }
 }
