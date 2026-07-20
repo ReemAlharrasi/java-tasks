@@ -62,8 +62,15 @@ public class LibraryManagementSystem {
         while (choice != 6) {
             //print menu
             System.out.println("-----Library Management System-----");
-            System.out.print("Services:\n1: Display all books\n2: Search for a book\n3: Borrow a book\n" +
-                    "4: Return a book\n5: Display library report\n6: Exit the program\nChoose a number: ");
+            System.out.print("""
+                    Services:
+                    1: Display all books
+                    2: Search for a book
+                    3: Borrow a book
+                    4: Return a book
+                    5: Display library report
+                    6: Exit the program
+                    Choose a number: """);
 
             //let user choose from the menu
             choice = in.nextInt();
