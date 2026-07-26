@@ -38,10 +38,20 @@ public class CustomerOrderManagementSystem {
     char letter1, letter2;
     double price;
 
+    int quantity;
+    String status;
+    HashSet<String> statusAllowed = new HashSet<>();
+
+
     void main() {
+        //add status allowed inputs to set
+        statusAllowed.add("pending");
+        statusAllowed.add("cancelled");
+        statusAllowed.add("completed");
+
         //Store information for at least 15 orders
         System.out.println("\n----- Add 15 entries -----");
-        for (int i=0;i<5;i++)addNewOrder();
+        for (int i = 0; i < 15; i++) addNewOrder();
 
         //call functions
         System.out.println("\n----- Display Order list -----");
@@ -88,14 +98,7 @@ public class CustomerOrderManagementSystem {
 
     //add new order
     public void addNewOrder() {
-        int quantity;
-        String status;
-        HashSet<String> statusAllowed = new HashSet<>();
-        statusAllowed.add("pending");
-        statusAllowed.add("cancelled");
-        statusAllowed.add("completed");
-
-        System.out.print("Enter Customer name: ");
+       System.out.print("Enter Customer name: ");
         customerNames.add(in.next().strip());
 
         System.out.print("Enter product Name: ");
@@ -120,7 +123,7 @@ public class CustomerOrderManagementSystem {
 
         System.out.print("Enter order status: ");
         status = in.next().strip().toLowerCase();
-        while (!statusAllowed.contains(status)){
+        while (!statusAllowed.contains(status)) {
             System.out.print("Invalid input. Enter order status: ");
             status = in.next().strip().toLowerCase();
         }
@@ -129,7 +132,7 @@ public class CustomerOrderManagementSystem {
         id = r.nextInt(8999) + 1000; //gives random int between 1000 and 9999
         while (orderIds.contains(id)) id = r.nextInt(8999) + 1000;//ensure id is not repeated
         orderIds.add(id);
-        System.out.println("Order added successfully. Total orders count: "+orderIds.size()+"\n");
+        System.out.println("Order added successfully. Total orders count: " + orderIds.size() + "\n");
     }
 
     //Calculate Order Statistics

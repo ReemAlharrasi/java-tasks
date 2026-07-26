@@ -182,10 +182,10 @@ public class ProductInventorySystem {
 
         //loop to update above variables
         for (int i = 0; i < productNames.size(); i++) {
-            if (productQuantities.get(i)>0){
+            if (productQuantities.get(i) > 0) {
                 available.add(productNames.get(i)); //add to available list
-                if (productQuantities.get(i)<5) low.add(productNames.get(i)); //add to low list
-            }else{
+                if (productQuantities.get(i) < 5) low.add(productNames.get(i)); //add to low list
+            } else {
                 outOfStock.add(productNames.get(i)); //add to outOfStock list
             }
         }
@@ -214,9 +214,9 @@ public class ProductInventorySystem {
     }
 
     //sorting alphabetically and by price (descending)
-    public void sortingProducts(){
+    public void sortingProducts() {
         //alphabetically
-        productsSortedAlpha=new ArrayList<String>(productNames);
+        productsSortedAlpha = new ArrayList<String>(productNames);
         for (int i = 0; i < productsSortedAlpha.size(); i++) {
             for (int j = i + 1; j < productsSortedAlpha.size(); j++) {
 
@@ -237,14 +237,14 @@ public class ProductInventorySystem {
         //display results
         System.out.println("\nAlphabetically Sorted list-----");
         System.out.printf("%-8s %-10s %-10s %-9s\n", "Product", "Name", "Quantity", "Price");
-        for (String product:productsSortedAlpha) {
-            index=productNames.indexOf(product);
+        for (String product : productsSortedAlpha) {
+            index = productNames.indexOf(product);
             System.out.printf("%-8s %-10s %-10d %-9.3f\n", index, productNames.get(index), productQuantities.get(index), productPrices.get(index));
         }
 
         //price (descending)
-        productsNamesSortedPriceDesc=new ArrayList<String>(productNames);
-        productSortedPrices=new ArrayList<Double>(productPrices);
+        productsNamesSortedPriceDesc = new ArrayList<String>(productNames);
+        productSortedPrices = new ArrayList<Double>(productPrices);
         for (int i = 0; i < productSortedPrices.size(); i++) {
             for (int j = i + 1; j < productSortedPrices.size(); j++) {
 
@@ -265,8 +265,8 @@ public class ProductInventorySystem {
         //display results
         System.out.println("\nprice (descending) Sorted list-----");
         System.out.printf("%-8s %-10s %-10s %-9s\n", "Product", "Name", "Quantity", "Price");
-        for (String product:productsNamesSortedPriceDesc) {
-            index=productNames.indexOf(product);
+        for (String product : productsNamesSortedPriceDesc) {
+            index = productNames.indexOf(product);
             System.out.printf("%-8s %-10s %-10d %-9.3f\n", index, productNames.get(index), productQuantities.get(index), productPrices.get(index));
         }
     }
