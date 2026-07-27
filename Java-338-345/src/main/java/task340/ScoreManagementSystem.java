@@ -70,6 +70,9 @@ public class ScoreManagementSystem {
         removeScore(index);
 
         sortAndReverse();
+
+        //close Scanner
+        in.close();
     }
 
     public void displayScoreInformation() {

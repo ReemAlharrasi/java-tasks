@@ -96,6 +96,9 @@ public class ProductInventorySystem {
 
         System.out.println("\n----- Sorting -----");
         sortingProducts();
+
+        //close scanner
+        in.close();
     }
 
     //display inventory

@@ -85,6 +85,9 @@ public class CustomerOrderManagementSystem {
 
         System.out.println("\n----- Sorting Orders -----");
         sortingOrders();
+
+        //close scanner
+        in.close();
     }
 
     //display all orders

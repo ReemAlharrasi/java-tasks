@@ -59,6 +59,9 @@ public class ArrayDataAnalyzerSystem {
         reverseArray();
 
         sortAndCompare();
+
+        //close scanner
+        in.close();
     }
 
     //function to Display Array Information

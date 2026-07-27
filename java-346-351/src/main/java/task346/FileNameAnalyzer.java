@@ -57,5 +57,8 @@ public class FileNameAnalyzer {
             System.out.println("Extension: " + ext);
             System.out.println("Classification: " + classification);
         }
+
+        //close scanner
+        in.close();
     }
 }

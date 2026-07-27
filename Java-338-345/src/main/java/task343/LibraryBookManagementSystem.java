@@ -40,6 +40,8 @@ public class LibraryBookManagementSystem {
         System.out.println("\n----- Search Book System -----");
         searchBook();
 
+        //close scanner
+        in.close();
     }
 
     //display all books function

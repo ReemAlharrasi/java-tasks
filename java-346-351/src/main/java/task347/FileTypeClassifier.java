@@ -2,7 +2,6 @@ package task347;
 
 import java.util.HashSet;
 import java.util.List;
-import java.util.Scanner;
 
 public class FileTypeClassifier {
     //initialize variables

@@ -73,6 +73,9 @@ public class ArrayStudentManagementSystem {
 
         //sorting list alphabetically
         sortingStudent();
+
+        //close Scanner
+        in.close();
     }
 
     //function to display all students

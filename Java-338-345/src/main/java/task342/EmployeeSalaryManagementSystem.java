@@ -95,6 +95,9 @@ public class EmployeeSalaryManagementSystem {
 
         System.out.println("\n----- Bonus Calculation -----");
         bonusCalculation();
+
+        //close scanner
+        in.close();
     }
 
     //function to display all employees in table form
