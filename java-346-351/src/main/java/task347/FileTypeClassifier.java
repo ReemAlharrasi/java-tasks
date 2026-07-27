@@ -6,7 +6,7 @@ import java.util.List;
 public class FileTypeClassifier {
     //initialize variables
     List<String> files = List.of("Reem.png", "robots.mp4", "voice1.mp3", "Matilda.pdf", "tasks.txt", "program.java", "contract.docx", "names");
-    int count, docCount, imgCount, codeCount, otherCount;
+    int docCount, imgCount, codeCount, otherCount;
     String name, ext, classification;
 
     //initialize sets for extension types
@@ -29,7 +29,6 @@ public class FileTypeClassifier {
 
         //print header
         System.out.printf("%-15s %-15s %-15s\n", "Name", "base", "ext", "Type", "classification");
-        count = 0;
         for (String file : files) {
             if (file.contains(".")) {
                 name = file.substring(0, file.lastIndexOf("."));

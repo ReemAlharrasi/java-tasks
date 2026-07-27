@@ -9,7 +9,7 @@ public class CsvTablePrinter {
     void main() {
         //initialize rows
         csvRows = new String[]{"Name,Age,City", "Ali,25,Muscat",
-                "Sara,30,Nizwa", "Reem,26,Barka", "Dhikra,31,Nakhal",
+                "Sara,30,Nizwa", "Reem,26,Barka", "Dhikra,31,Nakhal,3",
         };
 
         //get header columns and print them
