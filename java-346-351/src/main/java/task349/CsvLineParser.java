@@ -36,8 +36,8 @@ public class CsvLineParser {
             System.out.println("City: "+city);
             System.out.println("Age group: "+ageClass);
 
-            //close scanner
-            in.close();
         }
+        //close scanner
+        in.close();
     }
 }
