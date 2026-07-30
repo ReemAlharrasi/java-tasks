@@ -7,12 +7,12 @@ import java.util.Scanner;
 public class LibraryBookTracker {
     //declare variables
     HashSet<Integer> bookIDs = new HashSet<Integer>();
-    HashMap<Integer, String> booksIdTitles=new HashMap<Integer,String>();
+    HashMap<Integer, String> booksIdTitles = new HashMap<Integer, String>();
     Scanner in = new Scanner(System.in);
-    int size,id;
-    String title,classification;
+    int size, id;
+    String title, classification;
 
-    void main(){
+    void main() {
         //Prompt the user to enter the number of books
         System.out.print("Enter the number of Books: ");
         size = in.nextInt();
@@ -42,22 +42,25 @@ public class LibraryBookTracker {
             System.out.print("\nSearch a book -----\nEnter Book id: ");
             id = in.nextInt();
             if (booksIdTitles.containsKey(id)) {
-                System.out.println("Book id ("+id+") found. Title: "+booksIdTitles.get(id));
-            } else{
+                System.out.println("Book id (" + id + ") found. Title: " + booksIdTitles.get(id));
+            } else {
                 System.out.println("Book not found");
             }
 
             //classify performance based on average grade
-            if (bookIDs.size() < 5) classification="Small Library";
-            else if (bookIDs.size() <=10) classification="Medium Library";
-            else classification="Large Library";
+            if (bookIDs.size() < 5) classification = "Small Library";
+            else if (bookIDs.size() <= 10) classification = "Medium Library";
+            else classification = "Large Library";
 
             //display all results
-            System.out.println("\nInformation -----\nTotal Book records entered: "+size);
-            System.out.println("Total unique book records: "+bookIDs.size());
-            System.out.println("All Books IDs: "+bookIDs);
-            System.out.println("All Books  (ID=title): "+booksIdTitles);
-            System.out.println("Library classification: "+classification);
+            System.out.println("\nInformation -----\nTotal Book records entered: " + size);
+            System.out.println("Total unique book records: " + bookIDs.size());
+            System.out.println("All Books IDs: " + bookIDs);
+            System.out.println("All Books  (ID=title): " + booksIdTitles);
+            System.out.println("Library classification: " + classification);
         }
+
+        //close scanner
+        in.close();
     }
 }

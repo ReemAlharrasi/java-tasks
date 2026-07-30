@@ -33,7 +33,7 @@ public class StudentGradesMap {
                 } else {
                     System.out.print("    enter student grade: ");
                     grade = in.nextFloat();
-                    while (grade>100 || grade<0){
+                    while (grade > 100 || grade < 0) {
                         System.out.print("    Invalid grade. enter student grade: ");
                         grade = in.nextFloat();
                     }
@@ -60,19 +60,19 @@ public class StudentGradesMap {
                 totalGrades += grade;
             }
             average = (double) totalGrades / studentIdGrades.size();
-            System.out.println("Average grade: "+average);
+            System.out.println("Average grade: " + average);
 
             //classify performance based on average grade
-            if (average < 60) classification="Needs Improvement";
-            else if (average <=84) classification="Good Performance";
-            else classification="Excellent Performance";
+            if (average < 60) classification = "Needs Improvement";
+            else if (average <= 84) classification = "Good Performance";
+            else classification = "Excellent Performance";
 
             //display all results
-            System.out.println("\nInformation -----\nTotal employee records entered: "+size);
-            System.out.println("Total unique students records: "+studentIdGrades.size());
-            System.out.println("All student  (ID=grade): "+studentIdGrades);
-            System.out.println("Average grade: "+average);
-            System.out.println("Class performance classification: "+classification);
+            System.out.println("\nInformation -----\nTotal employee records entered: " + size);
+            System.out.println("Total unique students records: " + studentIdGrades.size());
+            System.out.println("All student  (ID=grade): " + studentIdGrades);
+            System.out.println("Average grade: " + average);
+            System.out.println("Class performance classification: " + classification);
         }
 
         //close scanner
