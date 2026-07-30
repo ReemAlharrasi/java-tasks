@@ -19,6 +19,7 @@ public class CustomerOrderManagementSystem {
     ArrayList<String> customerNamesSortedAlpha;
     ArrayList<String> customerNamesSortedDesc;
     ArrayList<Double> pricesSortedDesc;
+
     double totalsales;
     double average;
     double highestorder, lowestOrder;
@@ -283,8 +284,12 @@ public class CustomerOrderManagementSystem {
         }
 
         //display results
-        System.out.println("\nAlphabetically Sorted list-----\n" + customerNamesSortedAlpha.toString());
-
+        System.out.println("\nAlphabetically Sorted list -----\n");
+        System.out.printf("%-8s %-8s %-18s %-18s %-12s %-12s %-12s %-20s \n", "Index", "ID", "Customer Name", "Product Name", "Quantity", "Price", "Total price", "Status");
+        for (int i = 0; i < customerNamesSortedAlpha.size(); i++) {
+            index=customerNames.indexOf(customerNamesSortedAlpha.get(i));
+            System.out.printf("%-8d %-8d %-18s %-18s %-12d %-12.3f %-12.3f %-20s\n", index, orderIds.get(index), customerNames.get(index), productNames.get(index), quantities.get(index), prices.get(index), totalPrices.get(index), orderStatus.get(index));
+        }
 
         //price (descending)
         customerNamesSortedDesc = new ArrayList<String>(customerNames);
@@ -307,7 +312,11 @@ public class CustomerOrderManagementSystem {
             }
         }
         //display results
-        System.out.println("\nprice (descending) Sorted list-----\n" + pricesSortedDesc.toString());
-
+        System.out.println("\nprice (descending) Sorted list -----\n");
+        System.out.printf("%-8s %-8s %-18s %-18s %-12s %-12s %-12s %-20s \n", "Index", "ID", "Customer Name", "Product Name", "Quantity", "Price", "Total price", "Status");
+        for (int i = 0; i < customerNamesSortedAlpha.size(); i++) {
+            index=totalPrices.indexOf(pricesSortedDesc.get(i));
+            System.out.printf("%-8d %-8d %-18s %-18s %-12d %-12.3f %-12.3f %-20s\n", index, orderIds.get(index), customerNames.get(index), productNames.get(index), quantities.get(index), prices.get(index), totalPrices.get(index), orderStatus.get(index));
+        }
     }
 }
