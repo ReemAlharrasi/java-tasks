@@ -42,7 +42,7 @@ public class StudentGradesMap {
             }
 
             //update grade
-            System.out.print("\nUpdate grade -----\nEnter student id: ");
+            System.out.print("\nSearch and Update grade -----\nEnter student id: ");
             id = in.nextInt();
             if (!studentIdGrades.containsKey(id)) {
                 System.out.println("Student ID not found.");
@@ -73,7 +73,6 @@ public class StudentGradesMap {
             System.out.println("All student  (ID=grade): "+studentIdGrades);
             System.out.println("Average grade: "+average);
             System.out.println("Class performance classification: "+classification);
-
         }
 
         //close scanner
