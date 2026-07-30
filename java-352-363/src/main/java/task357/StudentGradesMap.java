@@ -10,6 +10,7 @@ public class StudentGradesMap {
     int size, id;
     double grade, totalGrades, average;
     String classification;
+
     //main function
     void main() {
         //Prompt the user to enter the number of students
