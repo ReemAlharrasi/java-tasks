@@ -121,16 +121,7 @@ public class UniversityCourseRegistrationSystem {
 
             //display final summary
             System.out.println("\nFinal Registration Summary -----");
-
-            ArrayList<Integer> ids = new ArrayList<Integer>(studentIDs);
-            Collections.sort(ids); //bonus : display in ascending order
-
-            System.out.println("\nAll Students-----");
-            System.out.printf("%-18s | %-18s", "Student ID\n", "Registered Courses");
-            System.out.println("_".repeat(50));
-            for (int studentId : ids) {
-                System.out.printf("%-18d | %-18s\n", studentId, studentCourses.get(studentId));
-            }
+            displayStudents();
             displayStats();
         }
 
