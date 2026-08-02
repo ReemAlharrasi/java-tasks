@@ -88,6 +88,8 @@ public class StudentNameManager {
                 }
             }
         }
+        //close scanner
+        in.close();
     }
 
     public void addStudent() {
