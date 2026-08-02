@@ -53,7 +53,7 @@ public class StudentAttendanceManager {
 
             //menu
             choice = 0;
-            do {
+            while (choice != 7) {
                 System.out.println("\n===== MENU =====");
                 System.out.println("1. Add Student Record");
                 System.out.println("2. Search Student Attendance");
@@ -107,7 +107,7 @@ public class StudentAttendanceManager {
                         System.out.println("Invalid choice.");
                 }
 
-            } while (choice != 7);
+            }
 
             //display final summary
             System.out.println("\nFinal Attendance Summary -----");
