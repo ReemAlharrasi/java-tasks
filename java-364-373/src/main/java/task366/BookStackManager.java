@@ -77,7 +77,7 @@ public class BookStackManager {
 
                     //exit
                     case 7:
-                        System.out.println("GoodBye~");
+                        System.out.println("\nGoodBye~");
                         break;
 
                     //invalid choice
@@ -91,7 +91,7 @@ public class BookStackManager {
         }
     }
 
-    public void addBook(){
+    public void addBook() {
         System.out.println("\nAdd Book -----");
         System.out.print("Enter Book title: ");
         title = in.next();
@@ -99,25 +99,50 @@ public class BookStackManager {
         System.out.println("Book added successfully.");
     }
 
-    public void removeTopBook(){
+    public void removeTopBook() {
         System.out.println("\nRemove Top Book -----");
         if (bookTitles.empty()) System.out.println("No books available.");
         else {
-            title=bookTitles.pop();
-            System.out.println("Book removed successfully: ["+title+"]");
+            title = bookTitles.pop();
+            System.out.println("Book removed successfully: [" + title + "]");
         }
     }
-    public void viewTopBook(){
+
+    public void viewTopBook() {
         System.out.println("\nView Top Book -----");
         if (bookTitles.empty()) System.out.println("No books available.");
         else {
-            System.out.println("Top Book: ["+bookTitles.peek()+"]");
+            System.out.println("Top Book: [" + bookTitles.peek() + "]");
         }
     }
-    public void searchBook(){
+
+    public void searchBook() {
+        System.out.println("\nSearch Book -----");
+        System.out.print("Enter Book title: ");
+        title = in.next();
+
+        if (bookTitles.search(title) != -1) {
+            System.out.println("Book found. position from top: " + bookTitles.search(title));
+        } else {
+            System.out.println("Book not found.");
+        }
 
     }
-    public void displayAllBooks(){}
-    public void displayStackStatistics(){}
+
+    public void displayAllBooks() {
+        System.out.println("\nDisplay All Books -----");
+        for (int i = 0; i < bookTitles.size(); i++) { //display each name with index
+            System.out.println((i + 1) + ". " + bookTitles.get(i));
+        }
+    }
+
+    public void displayStackStatistics() {
+        System.out.println("\nDisplay Stack Statistics -----");
+        System.out.println("Total number of books: "+bookTitles.size());
+        System.out.println("Top book: "+ bookTitles.peek());
+        System.out.print("stack is empty? ");
+        if (bookTitles.isEmpty()) System.out.println("yes");
+        else System.out.println("No");
+    }
 
 }
