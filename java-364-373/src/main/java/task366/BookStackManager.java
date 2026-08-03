@@ -138,8 +138,8 @@ public class BookStackManager {
     public void displayStackStatistics() {
         //display stats
         System.out.println("\nDisplay Stack Statistics -----");
-        System.out.println("Total number of books: "+bookTitles.size());
-        System.out.println("Top book: "+ bookTitles.peek());
+        System.out.println("Total number of books: " + bookTitles.size());
+        System.out.println("Top book: " + bookTitles.peek());
         System.out.print("stack is empty? ");
         if (bookTitles.isEmpty()) System.out.println("yes");
         else System.out.println("No");

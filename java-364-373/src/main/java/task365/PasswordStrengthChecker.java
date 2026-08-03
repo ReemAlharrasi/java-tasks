@@ -169,32 +169,32 @@ public class PasswordStrengthChecker {
         }
 
         //print final result
-        if (conditionMetCount>=4) strengthLevel="Strong Password";
+        if (conditionMetCount >= 4) strengthLevel = "Strong Password";
 
-        else if (conditionMetCount>=2) strengthLevel="Medium Password";
+        else if (conditionMetCount >= 2) strengthLevel = "Medium Password";
 
-        else strengthLevel="Weak Password";
+        else strengthLevel = "Weak Password";
 
-        System.out.println("===> "+strengthLevel);
+        System.out.println("===> " + strengthLevel);
     }
 
     public void convertPasswordFormat() {
         System.out.println("\nConvert Password Format -----");
-        System.out.println("Password in uppercase: "+password.toUpperCase());
-        System.out.println("Password in lowercase: "+password.toLowerCase());
+        System.out.println("Password in uppercase: " + password.toUpperCase());
+        System.out.println("Password in lowercase: " + password.toLowerCase());
     }
 
     public void displayPasswordReport() {
         analyzePasswordCharacters();
         checkPasswordStrength();
         System.out.println("\nDisplay Password Report -----");
-        System.out.println("Password length: "+ password.length());
-        System.out.println("First character: "+password.toCharArray()[0]);
-        System.out.println("Last character: "+password.toCharArray()[password.length()-1]);
-        System.out.println("Number of uppercase letters: "+upperCaseCount);
-        System.out.println("Number of lowercase letters: "+lowerCaseCount);
-        System.out.println("Number of digits: "+digitCount);
-        System.out.println("Number of special characters: "+specialCharCount);
-        System.out.println("Password strength level: "+strengthLevel);
+        System.out.println("Password length: " + password.length());
+        System.out.println("First character: " + password.toCharArray()[0]);
+        System.out.println("Last character: " + password.toCharArray()[password.length() - 1]);
+        System.out.println("Number of uppercase letters: " + upperCaseCount);
+        System.out.println("Number of lowercase letters: " + lowerCaseCount);
+        System.out.println("Number of digits: " + digitCount);
+        System.out.println("Number of special characters: " + specialCharCount);
+        System.out.println("Password strength level: " + strengthLevel);
     }
 }

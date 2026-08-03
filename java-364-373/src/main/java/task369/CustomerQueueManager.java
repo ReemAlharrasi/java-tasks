@@ -144,12 +144,12 @@ public class CustomerQueueManager {
 
     public void displayQueueStatistics() {
         System.out.println("\nDisplay Queue Statistics -----");
-        System.out.println("Total number of customers: "+customerNames.size());
-        if (!customerNames.isEmpty()){
-            System.out.println("First customer in the queue: "+customerNames.peek());
-            System.out.println("Last customer in the queue: "+((LinkedList<String>) customerNames).getLast()); //convert queue to linkedlist to use getLast()
+        System.out.println("Total number of customers: " + customerNames.size());
+        if (!customerNames.isEmpty()) {
+            System.out.println("First customer in the queue: " + customerNames.peek());
+            System.out.println("Last customer in the queue: " + ((LinkedList<String>) customerNames).getLast()); //convert queue to linkedlist to use getLast()
         }
-        System.out.println("queue is empty? "+customerNames.isEmpty());
+        System.out.println("queue is empty? " + customerNames.isEmpty());
     }
 
 }
