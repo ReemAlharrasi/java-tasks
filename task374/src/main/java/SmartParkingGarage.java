@@ -77,7 +77,7 @@ public class SmartParkingGarage {
                     resetEntireSystem();
                     break;
                 case 13:
-                    System.out.println("\nGoodBye~");
+                    System.out.println("\nThank you for using Smart Parking Garage");
                     break;
                 default:
                     System.out.println("Invalid choice.");
