@@ -29,59 +29,58 @@ public class NumberStackAnalyzer {
                 number = in.nextInt();
                 integerValues.push(number); //add to stack
             }
+
+            //menu
+            choice = 0;
+            do {
+                //print menu
+                System.out.println("\n===== MENU =====");
+                System.out.println("1. Add Number");
+                System.out.println("2. Remove Top Number");
+                System.out.println("3. View Top Number");
+                System.out.println("4. Display All Number");
+                System.out.println("5. Analyze Numbers");
+                System.out.println("6. Exit");
+                System.out.print("Enter choice: ");
+                choice = in.nextInt();
+
+                switch (choice) {
+                    //add Number
+                    case 1:
+                        addNumber();
+                        break;
+
+                    //remove top Number
+                    case 2:
+                        removeTopNumber();
+                        break;
+
+                    //view top Number
+                    case 3:
+                        viewTopNumber();
+                        break;
+
+                    //search Number
+                    case 4:
+                        displayAllNumbers();
+                        break;
+
+                    //display all Number
+                    case 5:
+                        analyzeNumbers();
+                        break;
+
+                    //display statistics
+                    case 6:
+                        System.out.println("\nGoodBye~");
+                        break;
+
+                    //invalid choice
+                    default:
+                        System.out.println("Invalid choice.");
+                }
+            } while (choice != 6);
         }
-
-        //menu
-        choice = 0;
-        do {
-            //print menu
-            System.out.println("\n===== MENU =====");
-            System.out.println("1. Add Number");
-            System.out.println("2. Remove Top Number");
-            System.out.println("3. View Top Number");
-            System.out.println("4. Display All Number");
-            System.out.println("5. Analyze Numbers");
-            System.out.println("6. Exit");
-            System.out.print("Enter choice: ");
-            choice = in.nextInt();
-
-            switch (choice) {
-                //add Number
-                case 1:
-                    addNumber();
-                    break;
-
-                //remove top Number
-                case 2:
-                    removeTopNumber();
-                    break;
-
-                //view top Number
-                case 3:
-                    viewTopNumber();
-                    break;
-
-                //search Number
-                case 4:
-                    displayAllNumbers();
-                    break;
-
-                //display all Number
-                case 5:
-                    analyzeNumbers();
-                    break;
-
-                //display statistics
-                case 6:
-                    System.out.println("\nGoodBye~");
-                    break;
-
-                //invalid choice
-                default:
-                    System.out.println("Invalid choice.");
-            }
-        } while (choice != 6);
-
         //close scanner
         in.close();
     }
@@ -116,7 +115,7 @@ public class NumberStackAnalyzer {
         if (integerValues.empty()) System.out.println("Stack is empty.");//if stack is empty
         else {
             for (int i = 0; i < integerValues.size(); i++) { //display each name with index
-                System.out.println((char)(i + 97) + ". number: " + integerValues.get(i));
+                System.out.println((char) (i + 97) + ". number: " + integerValues.get(i));
             }
         }
     }
@@ -135,31 +134,31 @@ public class NumberStackAnalyzer {
         zeroCount = 0;
 
         //loop to update values
-        for (int num:integerValues){
-            sumOfNumbers+=num; //add number to total
+        for (int num : integerValues) {
+            sumOfNumbers += num; //add number to total
             //update smallest and largest
-            if (num>largestNumber)largestNumber=num;
-            else if (num<smallestNumber)smallestNumber=num;
+            if (num > largestNumber) largestNumber = num;
+            else if (num < smallestNumber) smallestNumber = num;
             //update counts
-            if (num>0) positiveCout++;
-            else if (num<0) negativeCount++;
+            if (num > 0) positiveCout++;
+            else if (num < 0) negativeCount++;
             else zeroCount++;
-            if (num%2==0) evenCount++;
+            if (num % 2 == 0) evenCount++;
             else oddCount++;
         }
         //calculate average
         average = (float) sumOfNumbers / integerValues.size();
 
         //display results
-        System.out.println("Total number of elements: "+integerValues.size());
-        System.out.println("Sum of all numbers: "+sumOfNumbers);
-        System.out.println("Average of all numbers: "+average);
-        System.out.println("Largest number: "+largestNumber);
-        System.out.println("Smallest number: "+smallestNumber);
-        System.out.println("Total even numbers: "+evenCount);
-        System.out.println("Total odd numbers: "+oddCount);
-        System.out.println("Total positive numbers: "+positiveCout);
-        System.out.println("Total negative numbers: "+negativeCount);
-        System.out.println("Total zeros: "+zeroCount);
+        System.out.println("Total number of elements: " + integerValues.size());
+        System.out.println("Sum of all numbers: " + sumOfNumbers);
+        System.out.println("Average of all numbers: " + average);
+        System.out.println("Largest number: " + largestNumber);
+        System.out.println("Smallest number: " + smallestNumber);
+        System.out.println("Total even numbers: " + evenCount);
+        System.out.println("Total odd numbers: " + oddCount);
+        System.out.println("Total positive numbers: " + positiveCout);
+        System.out.println("Total negative numbers: " + negativeCount);
+        System.out.println("Total zeros: " + zeroCount);
     }
 }
