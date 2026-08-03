@@ -1,10 +1,10 @@
-package task369;
+package task371;
 
-import java.util.Queue;
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
-public class CustomerQueueManager {
+public class TicketQueueManager {
     //initialize scanner
     Scanner in = new Scanner(System.in);
 
@@ -25,9 +25,9 @@ public class CustomerQueueManager {
         } else {
             //get input
             for (int i = 0; i < size; i++) {
-                System.out.print((i + 1) + "- enter customer name: ");
+                System.out.print((i + 1) + "- Enter customer name: ");
                 name = in.next();
-                customerNames.offer(name); //add to queue
+                customerNames.add(name); //add customer
             }
 
             //menu
@@ -46,94 +46,90 @@ public class CustomerQueueManager {
                 choice = in.nextInt();
 
                 switch (choice) {
-
-                    //add Customer
                     case 1:
                         addCustomer();
                         break;
-
-                    //serve Customer
                     case 2:
                         serveCustomer();
                         break;
-
-                    //View Next Customer
                     case 3:
                         viewNextCustomer();
                         break;
-
-                    //search Customer
                     case 4:
                         searchCustomer();
                         break;
-
-                    //display all Customer
                     case 5:
                         displayAllCustomers();
                         break;
-
-                    //display statistics
                     case 6:
                         displayQueueStatistics();
                         break;
-
-                    //exit
                     case 7:
                         System.out.println("\nGoodBye~");
                         break;
-
-                    //invalid choice
                     default:
                         System.out.println("Invalid choice.");
                 }
-            } while (choice != 7);
 
+            } while (choice != 7);
         }
+
         //close scanner
         in.close();
     }
 
+    //Add Customer
     public void addCustomer() {
         System.out.println("\nAdd Customer -----");
-        System.out.print("Enter Customer name: ");
-        name = in.next(); //read from user
-        customerNames.offer(name); //add to queue
+        System.out.print("Enter customer name: ");
+        name = in.next();
+        customerNames.add(name); //add customer
         System.out.println("Customer added successfully.");
     }
 
+    //Serve Customer
     public void serveCustomer() {
         System.out.println("\nServe Customer -----");
-        if (customerNames.isEmpty()) System.out.println("No customers in the queue.");//if queue is empty
-        else {
-            name = customerNames.poll(); //remove first item from queue
-            System.out.println("Customer Served successfully: [" + name + "]");
+
+        if (customerNames.isEmpty()) {
+            System.out.println("Queue is empty.");
+        } else {
+            name = customerNames.remove(); //remove first customer
+            System.out.println("Served customer: [" + name + "]");
         }
     }
 
+    //View Next Customer
     public void viewNextCustomer() {
-        System.out.println("\nView  Next Customer -----");
-        if (customerNames.isEmpty()) System.out.println("No customers in the queue.");//if queue is empty
-        else {
-            System.out.println("Next Customer: [" + customerNames.peek() + "]");
+        System.out.println("\nView Next Customer -----");
+
+        if (customerNames.isEmpty()) {
+            System.out.println("Queue is empty.");
+        } else {
+            System.out.println("Next customer: [" + customerNames.element() + "]");
         }
     }
 
+    //Search Customer
     public void searchCustomer() {
         System.out.println("\nSearch Customer -----");
-        System.out.print("Enter Customer name: ");
-        name = in.next();//read from user
+        System.out.print("Enter customer name: ");
+        name = in.next();
 
-        if (customerNames.contains(name)) { //if found
-            System.out.println("Customer found");
+        if (customerNames.contains(name)) {
+            System.out.println("Customer found in queue.");
         } else {
             System.out.println("Customer not found.");
         }
     }
 
+    //Display All Customers
     public void displayAllCustomers() {
-        System.out.println("\nDisplay All Books -----");
-        if (customerNames.isEmpty()) System.out.println("No customers in the queue.");//if queue is empty
-        else {
+        System.out.println("\nDisplay All Customers -----");
+
+        if (customerNames.isEmpty()) {
+            System.out.println("Queue is empty.");
+        } else {
             int i = 1;
             for (String customer : customerNames) {
                 System.out.println(i + "- " + customer);
@@ -142,6 +138,7 @@ public class CustomerQueueManager {
         }
     }
 
+    //Display Queue Statistics
     public void displayQueueStatistics() {
         System.out.println("\nDisplay Queue Statistics -----");
         System.out.println("Total number of customers: " + customerNames.size());
@@ -152,7 +149,6 @@ public class CustomerQueueManager {
             System.out.println("First customer: " + customerNames.peek());
             System.out.println("Last customer: " + ((LinkedList<String>) customerNames).getLast()); //convert queue to linkedlist to use getLast());
         }
-        System.out.println("queue is empty? " + customerNames.isEmpty());
+        System.out.println("Queue is empty? " + customerNames.isEmpty());
     }
-
 }
