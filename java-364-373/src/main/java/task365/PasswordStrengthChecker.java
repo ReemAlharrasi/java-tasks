@@ -37,32 +37,32 @@ public class PasswordStrengthChecker {
 
                 switch (choice) {
 
-                    //add student
+                    //enter/update password
                     case 1:
                         enterPassword();
                         break;
 
-                    //search student
+                    //check password length
                     case 2:
                         checkPasswordLength();
                         break;
 
-                    //update attendance
+                    //analyze password
                     case 3:
                         analyzePasswordCharacters();
                         break;
 
-                    //remove student
+                    //check password strength
                     case 4:
                         checkPasswordStrength();
                         break;
 
-                    //display all records
+                    //convert password format
                     case 5:
                         convertPasswordFormat();
                         break;
 
-                    //display statistics
+                    //display report
                     case 6:
                         displayPasswordReport();
                         break;

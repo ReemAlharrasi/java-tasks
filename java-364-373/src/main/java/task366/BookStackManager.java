@@ -50,22 +50,22 @@ public class BookStackManager {
                         addBook();
                         break;
 
-                    //search student
+                    //remove top book
                     case 2:
                         removeTopBook();
                         break;
 
-                    //update attendance
+                    //view top book
                     case 3:
                         viewTopBook();
                         break;
 
-                    //remove student
+                    //search book
                     case 4:
                         searchBook();
                         break;
 
-                    //display all records
+                    //display all books
                     case 5:
                         displayAllBooks();
                         break;
