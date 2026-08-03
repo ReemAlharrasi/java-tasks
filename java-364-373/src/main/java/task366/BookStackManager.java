@@ -94,14 +94,14 @@ public class BookStackManager {
     public void addBook() {
         System.out.println("\nAdd Book -----");
         System.out.print("Enter Book title: ");
-        title = in.next();
-        bookTitles.push(title);
+        title = in.next(); //read from user
+        bookTitles.push(title); //add to stack
         System.out.println("Book added successfully.");
     }
 
     public void removeTopBook() {
         System.out.println("\nRemove Top Book -----");
-        if (bookTitles.empty()) System.out.println("No books available.");
+        if (bookTitles.empty()) System.out.println("No books available.");//if stack is empty
         else {
             title = bookTitles.pop();
             System.out.println("Book removed successfully: [" + title + "]");
@@ -110,7 +110,7 @@ public class BookStackManager {
 
     public void viewTopBook() {
         System.out.println("\nView Top Book -----");
-        if (bookTitles.empty()) System.out.println("No books available.");
+        if (bookTitles.empty()) System.out.println("No books available.");//if stack is empty
         else {
             System.out.println("Top Book: [" + bookTitles.peek() + "]");
         }
@@ -119,14 +119,13 @@ public class BookStackManager {
     public void searchBook() {
         System.out.println("\nSearch Book -----");
         System.out.print("Enter Book title: ");
-        title = in.next();
+        title = in.next();//read from user
 
-        if (bookTitles.search(title) != -1) {
+        if (bookTitles.search(title) != -1) { //if found
             System.out.println("Book found. position from top: " + bookTitles.search(title));
         } else {
             System.out.println("Book not found.");
         }
-
     }
 
     public void displayAllBooks() {
@@ -137,6 +136,7 @@ public class BookStackManager {
     }
 
     public void displayStackStatistics() {
+        //display stats
         System.out.println("\nDisplay Stack Statistics -----");
         System.out.println("Total number of books: "+bookTitles.size());
         System.out.println("Top book: "+ bookTitles.peek());
