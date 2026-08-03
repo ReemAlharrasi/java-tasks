@@ -45,7 +45,7 @@ public class BookStackManager {
 
                 switch (choice) {
 
-                    //add student
+                    //add book
                     case 1:
                         addBook();
                         break;
