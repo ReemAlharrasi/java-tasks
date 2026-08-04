@@ -1,0 +1,16 @@
+package task376;
+
+public class PrintNumbersFrom1ToN {
+    void main(){
+        printUp(5);
+    }
+
+    //recursive function
+    public static void printUp(int n){
+        if (n<=0) return; //base case
+        printUp(n-1); //recursive call
+        System.out.println(n); //print count up
+
+    }
+
+}
