@@ -79,6 +79,7 @@ public class SmartParkingGarage {
                 case 13:
                     System.out.println("\nThank you for using Smart Parking Garage");
                     break;
+
                 default:
                     System.out.println("Invalid choice.");
             }
