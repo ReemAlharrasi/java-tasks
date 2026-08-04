@@ -2,6 +2,7 @@ package task375;
 
 public class CountDownandCountUp {
     void main(){
+        System.out.println("Count Down and Count Up: \nn=4 >");
         countDownUp(4);
     }
 

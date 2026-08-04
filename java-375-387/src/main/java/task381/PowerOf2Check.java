@@ -2,8 +2,15 @@ package task381;
 
 public class PowerOf2Check {
     void main(){
-        boolean result=isPowerOfTwo(14);
-        System.out.println(result);
+        System.out.println("Power of 2 Check:");
+        boolean result;
+
+        result=isPowerOfTwo(14);
+        System.out.println("14: "+ result);
+
+
+        result=isPowerOfTwo(32);
+        System.out.println("32: "+ result);
 
     }
 

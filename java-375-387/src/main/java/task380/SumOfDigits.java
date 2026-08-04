@@ -2,8 +2,15 @@ package task380;
 
 public class SumOfDigits {
     void main(){
-        int result=sumDigits(4021);
-        System.out.println(result);
+        System.out.println("Sum of Digits:");
+
+        int result;
+
+        result=sumDigits(123);
+        System.out.println("123 : "+result);
+
+        result=sumDigits(4021);
+        System.out.println("4021 : "+result);
 
     }
 

@@ -2,8 +2,10 @@ package task377;
 
 public class CountDigitsInNumber {
     void main(){
+        System.out.println("Count Digits In Number:");
+
         int result=countDigits(999999);
-        System.out.println(result);
+        System.out.println("999999: "+result);
 
     }
 

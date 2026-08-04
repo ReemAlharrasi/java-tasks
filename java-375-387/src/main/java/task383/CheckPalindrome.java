@@ -2,6 +2,8 @@ package task383;
 
 public class CheckPalindrome {
     void main(){
+
+        System.out.println("Check if a Word is a Palindrome");
         boolean result;
         result=isPalindrome("level");
         System.out.println("level: "+result);
