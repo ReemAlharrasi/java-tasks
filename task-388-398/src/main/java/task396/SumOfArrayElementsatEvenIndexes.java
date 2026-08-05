@@ -15,7 +15,7 @@ public class SumOfArrayElementsatEvenIndexes {
 
     public static int sumEvenIndex(int[] numbers, int index) {
         if (index == numbers.length) return 0; //done iterating
-        if (index%2 ==0) return numbers[index] + sumEvenIndex(numbers, index + 1);
+        if (index % 2 == 0) return numbers[index] + sumEvenIndex(numbers, index + 1);
         else return sumEvenIndex(numbers, index + 1);
     }
 
